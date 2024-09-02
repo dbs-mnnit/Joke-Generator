@@ -8,7 +8,6 @@ function Joke() {
         try {
             const request = await fetch("https://sv443.net/jokeapi/v2/joke/Any?type=single");
             const response = await request.json();
-            console.log(response);
             setJoke(response.joke);
             setJokeCategory(response.category);
         } catch (error) {
