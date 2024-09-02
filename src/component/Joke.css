@@ -13,13 +13,17 @@
    
 }
 .category{
-    color: rgb(205, 92, 44);
-    font-size: 1.8rem;
+    color: rgb(227, 109, 109);
+    font-size: 2.5rem;
+    background-color: rgb(98, 202, 228);
+    border-radius: 2rem;
+    padding: 1rem;
+    box-shadow: .5rem .5rem .5rem .25rem rgba(17, 111, 135, 0.75);
 }
 .button{
     padding: 1rem;
     width: 20rem;
-    background-color: red;
+    background-color: rgb(255, 0, 0);
     border: none;
     outline: none;
     color: white;
@@ -28,4 +32,12 @@
     border-radius: 1.5rem;
     cursor: pointer;
     
+}
+.button:hover{
+    background-color: rgb(183, 3, 3);
+    box-shadow: .5rem .5rem .5rem .25rem rgba(17, 111, 135, 0.75);
+}
+.button:active{
+    background-color: rgb(148, 4, 4);
+    transform: scale(.98);
 }

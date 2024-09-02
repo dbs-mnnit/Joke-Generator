@@ -1,10 +1,15 @@
 .card{
-    border: 2px solid red;
+    border: none;
+    
     margin-bottom: 2rem;
     margin-top: 0;
     padding: 1rem;
-    max-width: 15rem;
+    max-width: 40rem;
     background-color: rgb(98, 202, 228);
     border-radius: 2rem;
+    font-size: 2.5rem;
 
+}
+.card:hover{
+    box-shadow: .5rem .5rem .5rem .25rem rgba(17, 111, 135, 0.75);
 }
