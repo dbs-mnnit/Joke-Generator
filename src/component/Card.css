@@ -1,0 +1,10 @@
+.card{
+    border: 2px solid red;
+    margin-bottom: 2rem;
+    margin-top: 0;
+    padding: 1rem;
+    max-width: 15rem;
+    background-color: rgb(98, 202, 228);
+    border-radius: 2rem;
+
+}
