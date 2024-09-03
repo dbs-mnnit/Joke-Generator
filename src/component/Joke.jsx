@@ -6,9 +6,13 @@ function Joke() {
     const [jokeCategory, setJokeCategory] = useState('Dark');
     const handleClick = async () => {
         try {
-            const request = await fetch("https://sv443.net/jokeapi/v2/joke/Dark?type=single");
+            const request = await fetch("https://v2.jokeapi.dev/joke/Any");
             const response = await request.json();
+            console.log(response);
+            if(response.type==='single')
             setJoke(response.joke);
+            else
+            setJoke(response.setup +"\n"+ response.delivery);
             setJokeCategory(response.category);
         } catch (error) {
             console.error("Error fetching the joke:", error);
