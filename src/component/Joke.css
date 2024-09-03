@@ -6,9 +6,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .heading{
-    color: blueviolet;
+    color: rgb(50, 7, 159);
     font-size: 4rem;
    
 }
@@ -40,4 +41,20 @@
 .button:active{
     background-color: rgb(148, 4, 4);
     transform: scale(.98);
+}
+#HumorHub{
+    background-color: black;
+    border-radius: 1.5rem;
+    padding: .8rem;
+    cursor: pointer;
+}
+#Humor{
+    color: white;
+    margin-right: .5rem;
+}
+#Hub{
+    color: black;
+    background-color: rgb(213, 139, 20);
+    border-radius: 1rem;
+    
 }

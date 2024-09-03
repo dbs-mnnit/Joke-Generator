@@ -6,7 +6,7 @@ function Joke() {
     const [jokeCategory, setJokeCategory] = useState('Dark');
     const handleClick = async () => {
         try {
-            const request = await fetch("https://sv443.net/jokeapi/v2/joke/Any?type=single");
+            const request = await fetch("https://sv443.net/jokeapi/v2/joke/Dark?type=single");
             const response = await request.json();
             setJoke(response.joke);
             setJokeCategory(response.category);
@@ -18,7 +18,7 @@ function Joke() {
 
     return (
         <div className='wrapper'>
-            <h1 className='heading'>Welcome to JOKEPUR</h1>
+            <h1 className='heading'>Welcome to <span id='HumorHub'><span id='Humor'>Humor</span><span id='Hub'>hub</span></span> </h1>
             <h2 className='category'>{jokeCategory} Joke</h2>
             <Card joke={joke}/>
             <button className='button' onClick={handleClick}>CLICK TO GENERATE A JOKE</button>
